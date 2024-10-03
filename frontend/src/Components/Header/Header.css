@@ -1,0 +1,110 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Elements spaced out */
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Ensures header stays on top */
+  background-color: rgba(0, 0, 0, 0.8); /* Adding some opacity for better visibility */
+}
+
+.logo {
+  width: 150px; /* Default size for desktop */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background-color: #f40612;
+}
+
+/* Mobile-first approach: For smaller screens */
+
+/* Extra small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 120px; /* Smaller logo for mobile */
+  }
+
+  .signin-btn {
+    width: 100%; /* Make the button full width on mobile */
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .hero-overlay .hero-title{
+    font-size: 2em;
+  }
+  .hero-input-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .email-input{
+    width: 100%;
+  }
+}
+
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 10px; /* Less padding for smaller screens */
+  }
+
+  .logo {
+    width: 130px; /* Slightly smaller logo */
+  }
+
+  .signin-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Very small screens (max-width: 375px) */
+@media (max-width: 375px) {
+  .header {
+    padding: 8px 5px;
+  }
+
+  .logo {
+    width: 100px; /* Further reduce logo size */
+  }
+
+  .signin-btn {
+    font-size: 12px; /* Reduce button font */
+    padding: 6px 10px; /* Adjust padding for smaller size */
+  }
+}

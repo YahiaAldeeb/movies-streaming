@@ -1,0 +1,55 @@
+.trending-now {
+    color: white;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center; /* Centering the title */
+  }
+  
+  select {
+    display: block;
+    margin: 11px auto; /* Centering the select dropdown */
+    background-color: rgb(55, 54, 54);
+    width: 90px;
+    height: 33px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .slider-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden; /* Hides the overflowing content */
+    scroll-behavior: smooth;
+    width: 100%; /* Control the width of the slider */
+    justify-content: center;
+  }
+  
+  .movie-card {
+    margin-right: 15px;
+    min-width: 150px;
+  }
+  
+  .movie-card img {
+    width: 150px;
+    height: 200px;
+  }
+  
+  .scroll-left, .scroll-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    
+  }
+  
