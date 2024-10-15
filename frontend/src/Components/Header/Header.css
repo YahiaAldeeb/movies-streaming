@@ -15,7 +15,7 @@ body {
   justify-content: space-between; /* Elements spaced out */
   align-items: center;
   padding: 20px;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 10; /* Ensures header stays on top */
@@ -28,23 +28,57 @@ body {
 
 .header-right {
   display: flex;
-  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px; /* Space between buttons */
+  width: 100%; /* Ensure the container takes full width */
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-right {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      width: 100%; /* Ensure the container takes full width */
+      justify-content: space-between; /* Space buttons evenly */
+      margin-top: 10px; /* Margin above buttons */
+  }
+  
+  .signin-btn {
+      width: 100%; /* Ensure buttons take full width */
+      padding: 12px; /* Adjust padding for bigger buttons */
+  }
+}
+
+/* Button styling */
 .signin-btn {
-  background-color: #e50914;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #fff;
+  background-color: #e50914; /* Netflix red */
+  color: white;
+  font-size: 14px; /* Responsive font size */
+  padding: 10px 15px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width */
+  text-align: center; /* Center text */
 }
 
-.signin-btn:hover {
-  background-color: #f40612;
+.logout-btn{
+  background-color: #e50914; /* Netflix red */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
+
+/* Button hover effects */
+.signin-btn:hover {
+  background-color: #f40612; /* Lighter shade on hover */
+}
+
 
 /* Mobile-first approach: For smaller screens */
 

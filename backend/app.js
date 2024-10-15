@@ -1,7 +1,8 @@
 const express = require('express');
 const movieRouter= require('./routes/movieRoutes')
 const userRouter= require('./routes/userRoutes')
-const cors = require('cors')
+const cors = require('cors');
+const path = require('path'); // Import path module for consistency
 
 
 const app = express()
@@ -14,6 +15,8 @@ app.use(express.json());
 // };
 
 app.use(cors());
+
+app.use('/img', express.static(path.join(__dirname, 'public', 'img')));
 
 app.use((req, res, next) => {
     req.requestTime = new Date().toISOString();

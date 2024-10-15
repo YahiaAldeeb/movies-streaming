@@ -16,14 +16,28 @@ const movieSchema = new mongoose.Schema({
         default: 'a great product',
         required: [true, 'A product must have a description'],
     },
-    image:{
+    poster:{
         type: String,
+    },
+    rating:{
+        type: Number,
+        min:0,
+        max:5,
+        required:true
     },
     createdAt: {
         type: Date,
         default: Date.now(),
         select: false
       },
+      genre:{
+        type:String,
+        required: [true, 'A move must have a genre'],
+        enum: {
+            values: ['comedy', 'action', 'drama','romance'],
+            message: 'Difficulty is either: comedy, action, drama,romance'
+          }
+    },
      
 })
 

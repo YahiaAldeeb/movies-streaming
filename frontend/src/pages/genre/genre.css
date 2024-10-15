@@ -1,0 +1,104 @@
+/* Movie list container */
+.movie-list {
+    padding: 30px;
+    background-color: #141414; /* Dark background */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Scroll if needed */
+}
+
+/* Netflix-themed button */
+.netflix-button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.netflix-button:hover {
+    background-color: #f40612; /* Lighter shade of Netflix red on hover */
+}
+
+.netflix-button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.netflix-button:active {
+    background-color: #b20710; /* Darker shade on click */
+}
+
+/* Title styling */
+.movie-list h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 40px; /* Space below the title */
+    font-size: 32px; /* Font size */
+    font-weight: bold; /* Bold font */
+    color: #E50914; /* Netflix red */
+}
+
+/* Movie grid */
+.movie-list ul {
+    list-style-type: none; /* No list markers */
+    padding: 0; /* Remove padding */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between grid items */
+}
+
+/* Movie card */
+.movie-list li {
+    background-color: #222; /* Dark card background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+    display: flex; /* Use flexbox for positioning */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space out elements */
+}
+
+/* Zoom effect on hover */
+.movie-list li:hover {
+    transform: scale(1.05); /* Scale up card */
+}
+
+/* Movie poster image styling */
+.movie-list img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Movie details container */
+.movie-details {
+    margin-top: 15px; /* Space above details */
+}
+
+/* Movie title styling */
+.movie-list h3 {
+    font-size: 18px; /* Font size */
+    margin: 0; /* No margin */
+    color: #fff; /* White color for title */
+}
+
+/* Movie rating and description */
+.movie-list p {
+    margin: 10px 0; /* Vertical margin */
+    font-size: 14px; /* Font size */
+    color: #bbb; /* Subtle text color */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .movie-list ul {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* More items in a row */
+    }
+
+    .movie-list h2 {
+        font-size: 24px; /* Smaller title font on mobile */
+    }
+}

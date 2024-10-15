@@ -36,7 +36,7 @@ const SignInPage = () => {
     <div className="signin-page">
       <div className="signin-body">
         <form className="signin-form" onSubmit={handleLogin}>
-          <h1>Sign In</h1>
+          <h1>Login To have Access to watch movies</h1>
           {error && <div className="error-message">{error}</div>} {/* Display error message */}
           <input
             type="email"

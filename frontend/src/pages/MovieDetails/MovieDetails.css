@@ -1,0 +1,79 @@
+/* MovieDetails.css */
+
+/* Netflix-style background */
+.movie-details-page {
+  background-color: #141414; /* Dark Netflix-style background */
+  color: white; /* Netflix white text */
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Back button */
+.back-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: darkred;
+}
+
+/* Movie details container */
+.movie-details-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #222; /* Slightly lighter for contrast */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Movie poster styling */
+.movie-poster {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Movie information */
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.movie-info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #e50914; /* Netflix red */
+}
+
+.movie-episodes,
+.movie-description,
+.movie-rating {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.movie-description {
+  color: #b3b3b3; /* Netflix gray for descriptions */
+}
+
+.movie-rating {
+  font-weight: bold;
+  color: #f5c518; /* IMDb gold-style rating */
+}

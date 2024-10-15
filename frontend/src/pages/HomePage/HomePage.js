@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../../Components/Header/Header';
 import HeroSection from '../../Components/HeroSection/HeroSection';
 import TrendingMoviesSlider from '../../Components/TrendingMoviesSlider/TrendingMoviesSlider';
 import Features from '../../Components/Features/Features';
+import WatchByGenre from '../../Components/WatchByGenre/WatchByGenre';
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
      
       <HeroSection />
       <TrendingMoviesSlider/>
+      <WatchByGenre/>
       <Features/>
       </>
   )
