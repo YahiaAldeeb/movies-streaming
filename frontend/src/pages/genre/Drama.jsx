@@ -39,7 +39,7 @@ const MovieList = () => {
 
   return (
     <div className="movie-list">
-      <h2>Action</h2>
+      <h2>Drama</h2>
       <ul>
         {Array.isArray(movies) && movies.length > 0 ? (
           movies.map((movie) => (

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate for navigation
+import AllMoviesButton from '../AllMoviesButton/AllMoviesButton';
 import './Header.css';
 
 function Header() {
@@ -25,9 +26,7 @@ function Header() {
         {isLoggedIn ? (
           <>
             <button className="logout-btn" onClick={handleLogout}>Logout</button>
-            <Link to="/AllMovies">
-              <button className="signin-btn">All Movies</button>
-            </Link>
+            <AllMoviesButton/>
           </>
         ) : (
           <>

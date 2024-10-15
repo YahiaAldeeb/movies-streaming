@@ -9,8 +9,9 @@ const HomePage = () => {
      <>
      
       <HeroSection />
-      <TrendingMoviesSlider/>
+      
       <WatchByGenre/>
+      <TrendingMoviesSlider/>
       <Features/>
       </>
   )

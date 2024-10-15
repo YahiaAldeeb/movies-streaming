@@ -50,9 +50,10 @@ select {
 }
 
 .slider {
-  display: flex; /* Horizontal layout for cards */
-  overflow: hidden; /* Hide overflow */
-  width: 100%; /* Full width */
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
 }
 
 .movie-card {
@@ -63,8 +64,8 @@ select {
   padding: 20px; /* Increased padding inside the card */
   text-align: center; /* Center text */
   transition: transform 0.3s; /* Smooth transition on hover */
-  width: 33%; /* Adjusted width for larger cards */
-  height: 350px; /* Fixed height for cards */
+  width: 30%; /* Adjusted width for larger cards */
+  height: 500px; /* Fixed height for cards */
   display: flex; /* Use flexbox for vertical alignment */
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center items horizontally */
@@ -75,7 +76,7 @@ select {
   width: 100%; /* Full width of the card */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners for images */
-  max-height: 200px; /* Limit the height of images */
+  max-height: 400px; /* Limit the height of images */
 }
 
 
